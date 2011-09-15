@@ -45,7 +45,6 @@ class CalculatorCrazySequence
 end
 
 
-
 max = 0
 numero = 0
 
