@@ -35,10 +35,10 @@ class CalculatorCrazySequence
   end
   
   def calculate algorithm
-    if algorithm == :calculate_recursive
-      self.calculate_recursive
+    if self.respond_to? algorithm
+      self.method(algorithm).call
     else
-      self.calculate_iterative
+      raise "[ERRO] Metodo :#{algorithm} nao encontrado em #{self.class}!"
     end
   end
   
@@ -62,4 +62,6 @@ for i in 1..1_000_000
   
 end
 
-puts "Numero: #{numero} - #{max}"
+if max > 0
+  puts "Numero: #{numero} - #{max}"
+end
