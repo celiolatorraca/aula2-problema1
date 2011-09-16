@@ -1,0 +1,17 @@
+Ruby 1.8.7
+
+Numero: 837799 - 525
+
+real	0m8.673s
+user	0m8.638s
+sys	0m0.033s
+
+=========================
+
+Ruby 1.9.2
+
+Numero: 837799 - 525
+
+real	0m4.823s
+user	0m4.778s
+sys	0m0.047s
