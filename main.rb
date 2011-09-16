@@ -59,7 +59,7 @@ class CalculatorForCrazySequence
   
   def calculate algorithm
     if self.respond_to? algorithm
-      self.method(algorithm).call
+      self.send(algorithm)
     else
       raise "[ERRO] Metodo :#{algorithm} nao encontrado em #{self.class}!"
     end
